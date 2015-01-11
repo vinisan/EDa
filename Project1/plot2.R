@@ -23,3 +23,4 @@ with(main.Data, {plot (dateTime,  Global_active_power,
                        xlab = "")
                  lines(dateTime, Global_active_power)
 })
+dev.off()

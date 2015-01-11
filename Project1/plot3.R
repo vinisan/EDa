@@ -16,6 +16,7 @@ main.Data <- mutate(main.Data, dateTime = dmy_hms(paste(Date, Time)))
 
 #making the plot
 png("plot3.png")
+par(bg = "transparent")
 with(main.Data, {
   plot(dateTime, Sub_metering_1,
        type = "n",
@@ -27,3 +28,4 @@ with(main.Data, {
   legend("topright", lty = 1, col = c("black", "red", "blue"),
          legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 })
+dev.off()
