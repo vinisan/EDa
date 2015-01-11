@@ -16,6 +16,7 @@ main.Data <- mutate(main.Data, dateTime = dmy_hms(paste(Date, Time)))
 #making the plot
 par (bg = "transparent")
 png("plot4.png")
+par (bg = "transparent")
 par(mfrow = c(2, 2), bg = "transparent")
 with(main.Data, {
   # panel 1 (top left)
